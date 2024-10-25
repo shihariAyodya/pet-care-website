@@ -1,0 +1,204 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg,#442a04 30%,#442a04 30%,#92662d 30%,#92662d 100%);
+}
+
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;  
+}
+
+.contactUs .title h2{
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+.form{
+    grid-area: form;  
+}
+
+.info{
+    grid-area: info;  
+}
+
+.map{
+    grid-area: map;  
+}
+
+.contact{
+    padding: 40px;
+    background: #d1a25c;
+    box-shadow: 0 5px 35px rgb(0,0,0,0.15);
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+     
+}
+
+.contact h3{
+    color: #442a04;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* form */
+.formBox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+   display: flex;
+   flex-direction: column; 
+   margin-bottom: 10px;
+   width: 50%;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: rgb(65, 40, 5);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #442a04;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #46300e; 
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;  
+}
+
+.inputBox input[type="submit"]{
+    background: #92662d;
+    color: antiquewhite;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox ::placeholder{
+    color: rgb(44, 29, 14); 
+}
+
+/* info */
+.info{
+    background: #f1c285;
+}
+
+.info h3{
+    color: #442a04;
+    font-weight: bold;
+}
+
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #845002;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-right: 15PX;
+    border-radius: 50%;
+}
+
+.info .infoBox div p{
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;  
+}
+
+.info .infoBox div a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci{
+    margin-top: 40PX;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color: aqua;
+    font-size: 2em;
+    color: #46300e;
+}
+
+.sci li a:hover{
+    color: rgb(213, 150, 24);
+}
+
+.map{
+    padding: 0;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media(max-width: 991px)
+{
+    
+}

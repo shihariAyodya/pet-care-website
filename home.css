@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial; 
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(182, 124, 48);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(42, 28, 7);
+}
+
+.menu{
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+.menu li a{
+    font-size: 19px;
+    color: rgb(90, 56, 8);
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.menu li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.search form{
+    display: flex;
+    margin: 0;
+}
+
+.search input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search input:hover{
+    border: 1px solid #72a0d4;
+}
+
+.search button{
+    padding: 10px;
+    background-color: rgb(77, 50, 8);
+    border: none;
+    border-radius: 5px;
+    color: #fff9f9;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color: rgb(145, 92, 22);
+    color: rgb(37, 22, 2);
+}
+
+.pol{
+    width:100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img8.webp);
+    background-size: cover;
+    height: 120vh;
+    padding-top: 130px;
+    width: 1600px;
+}
+.content{
+    height: auto;
+    margin: auto;
+    color: antiquewhite;
+    position: relative;
+    padding-left: 50px;
+}
+
+.content .par{
+    padding-bottom: 25px;
+    font-family: 'Times New Roman';
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-size: 20px;
+    padding-top: 25px;
+    
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    margin-top: 9px;
+    letter-spacing: 3px;
+    line-height: 40px;
+
+}
+
+.content .cn{
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    background: rgb(214, 181, 91);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.8s ease;
+    font-weight: bold;
+
+}
+.cn:hover{
+    background-color: rgb(194, 172, 129);
+}
+
+.content span{
+    color: rgb(224, 138, 25);
+}
